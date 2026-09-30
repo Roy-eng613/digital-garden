@@ -8,8 +8,6 @@ tags:
   - GitHub-Pages
 type: moc
 title: デジタルガーデン
-aliases:
-  - デジタルガーデンの入口
 ---
 
 # デジタルガーデン
@@ -18,8 +16,10 @@ aliases:
 
 ## 入口
 
-- [[garden/デジタルガーデンとはなにか]]
+- [[garden/concept/デジタルガーデンとはなにか]]
 - [[garden/QuartzとGitHub Pagesを使ってデジタルガーデンを公開した]]
+- [[garden/concept/GitHub Dependabotとはなにか]]
+- [[garden/concept/GitHubのmainブランチを保護するとはなにか]]
 - [[awards/文学賞|文学賞の情報]]
 
 ## よく使うタグ
