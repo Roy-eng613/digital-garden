@@ -26,6 +26,8 @@ jobs:
         with:
           node-version: 24
           cache: npm
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
       - name: Install dependencies
         run: npm ci
       - name: Install Quartz plugins
@@ -33,7 +35,7 @@ jobs:
       - name: Build Quartz
         run: npx quartz build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: public
 
