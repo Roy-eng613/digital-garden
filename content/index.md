@@ -16,10 +16,10 @@ title: デジタルガーデン
 
 ## 入口
 
-- [[garden/concept/デジタルガーデンとはなにか]]
-- [[garden/QuartzとGitHub Pagesを使ってデジタルガーデンを公開した]]
-- [[garden/concept/GitHub Dependabotとはなにか]]
-- [[garden/concept/GitHubのmainブランチを保護するとはなにか]]
+- [[デジタルガーデンとはなにか]]
+
+## 公募情報
+
 - [[awards/文学賞|文学賞の情報]]
 
 ## よく使うタグ

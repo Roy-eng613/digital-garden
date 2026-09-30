@@ -187,8 +187,8 @@ plugins:
     options:
       includeAll: false
       includedProperties:
-        - updated
         - type
+        - confidence
         - status
       excludedProperties: []
       hidePropertiesView: false

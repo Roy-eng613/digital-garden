@@ -11,6 +11,7 @@ related:
   - "[[QuartzとGitHub Pagesを使ってデジタルガーデンを公開した]]"
   - "[[GitHub Dependabotとはなにか]]"
 type: concept
+confidence: medium
 status: draft
 title: GitHubのmainブランチを保護するとはなにか
 aliases:

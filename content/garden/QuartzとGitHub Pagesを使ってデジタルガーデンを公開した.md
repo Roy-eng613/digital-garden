@@ -11,6 +11,7 @@ source:
   - https://github.com/jackyzha0/quartz
   - https://docs.github.com/en/pages
 type: log
+confidence: high
 status: draft
 title: QuartzとGitHub Pagesを使ってデジタルガーデンを公開した
 aliases:
