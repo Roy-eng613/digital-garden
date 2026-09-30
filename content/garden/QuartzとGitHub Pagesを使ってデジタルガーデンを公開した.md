@@ -10,8 +10,6 @@ source:
   - https://quartz.jzhao.xyz/
   - https://github.com/jackyzha0/quartz
   - https://docs.github.com/en/pages
-related:
-  - "[[デジタルガーデンとはなにか]]"
 type: log
 status: draft
 title: QuartzとGitHub Pagesを使ってデジタルガーデンを公開した
@@ -163,7 +161,12 @@ analytics:
 
 ## 関連キーワード
 
-[[デジタルガーデンとはなにか]]、[[GitHub Dependabotとはなにか]]、[[GitHubのmainブランチを保護するとはなにか]]、Obsidian、Quartz、GitHub Pages
+- [[デジタルガーデンとはなにか]]
+- [[GitHub Dependabotとはなにか]]
+- [[GitHubのmainブランチを保護するとはなにか]]
+- Obsidian
+- Quartz
+- GitHub Pages
 
 ## 参考資料
 

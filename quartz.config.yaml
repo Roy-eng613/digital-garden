@@ -129,7 +129,7 @@ plugins:
       position: right
       priority: 50
   - source: "@quartz-community/article-title"
-    enabled: true
+    enabled: false
     layout:
       position: beforeBody
       priority: 10
@@ -185,8 +185,11 @@ plugins:
   - source: "@quartz-community/note-properties"
     enabled: true
     options:
-      includeAll: true
-      includedProperties: []
+      includeAll: false
+      includedProperties:
+        - updated
+        - type
+        - status
       excludedProperties: []
       hidePropertiesView: false
       delimiters: ---

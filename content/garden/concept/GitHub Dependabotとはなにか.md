@@ -50,7 +50,13 @@ DependabotがPull Requestを作成しただけでは、サイトの内容や公�
 
 ## 関連キーワード
 
-[[GitHubのmainブランチを保護するとはなにか]]、[[QuartzとGitHub Pagesを使ってデジタルガーデンを公開した]]、GitHub Actions、依存パッケージ
+- [[GitHubのmainブランチを保護するとはなにか]]
+- GitHub Actions
+- 依存パッケージ
+
+## 関連ページ
+
+- [[QuartzとGitHub Pagesを使ってデジタルガーデンを公開した]]
 
 ## 参考資料
 

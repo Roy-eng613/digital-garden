@@ -55,7 +55,13 @@ Dependabotが作成した更新もPull Requestとして確認できる。`main`�
 
 ## 関連キーワード
 
-[[GitHub Dependabotとはなにか]]、[[QuartzとGitHub Pagesを使ってデジタルガーデンを公開した]]、Pull Request、GitHub Actions
+- [[GitHub Dependabotとはなにか]]
+- Pull Request
+- GitHub Actions
+
+## 関連ページ
+
+- [[QuartzとGitHub Pagesを使ってデジタルガーデンを公開した]]
 
 ## 参考資料
 
