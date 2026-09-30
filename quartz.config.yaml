@@ -5,7 +5,10 @@ configuration:
   enableSPA: true
   enablePopovers: true
   locale: ja-JP
-  baseUrl: roy-eng613.github.io/digital-garden
+  baseUrl: ogiri-siyou.com
+  analytics:
+    provider: google
+    tagId: G-YDKW67C9ET
   ignorePatterns:
     - private
     - templates
