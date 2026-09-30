@@ -11,7 +11,6 @@ source:
   - https://github.com/jackyzha0/quartz
   - https://docs.github.com/en/pages
 related:
-  - "[[デジタルガーデン]]"
   - "[[デジタルガーデンとはなにか]]"
 type: log
 status: draft
@@ -28,7 +27,7 @@ aliases:
 
 Quartzは、MarkdownをWebサイトに変換する静的サイトジェネレーターだ。Obsidianのwikilink、タグ、バックリンク、グラフ、全文検索などを扱えるので、単なるMarkdown変換器よりもデジタルガーデン向きだと思った。
 
-今回使ったのはQuartz v5。公式リポジトリのv5を取得し、Node.jsで動く構成をそのまま利用した。ローカル環境ではNode.js v26.8.1を使い、GitHub ActionsではNode.js 24を使うようにした。
+今回使ったのはQuartz v5。公式リポジトリのv5を取得し、Node.jsで動く構成をそのまま利用した。Node.jsのバージョンは、QuartzとGitHub Actionsが対応しているものを選んだ。
 
 ## GitHub Pagesにした理由
 
@@ -43,18 +42,16 @@ GitHub FreeでGitHub Pagesを使う場合、公開リポジトリにする必要
 
 ```text
 非公開のObsidian Vault
-  └─ 22_Digital-garden/
-       └─ 公開候補のMarkdown
+  └─ 公開候補のMarkdown
 
 公開用GitHubリポジトリ
-  └─ digital-garden/
-       ├─ content/
-       ├─ quartz.config.yaml
-       └─ .github/workflows/deploy.yml
+  ├─ content/
+  ├─ quartz.config.yaml
+  └─ .github/workflows/deploy.yml
 
 Obsidianで原稿を書く
   → 公開前チェック
-  → content/へコピー
+  → 公開用リポジトリのcontent/へコピー
   → git push
   → GitHub Actions
   → GitHub Pages
@@ -64,11 +61,7 @@ Obsidianで原稿を書く
 
 ### 1. 空のリポジトリを作った
 
-`Roy-eng613/digital-garden`という公開リポジトリを作り、次の場所へcloneした。
-
-```text
-/home/roy/Work/git/digital-garden
-```
+自分のGitHubアカウントに公開リポジトリを作り、ローカルへcloneした。
 
 ### 2. Quartz v5を初期配置した
 
@@ -124,41 +117,30 @@ artifactのアクションも`actions/upload-pages-artifact@v4`へ更新した�
 
 ## 独自ドメインを設定した
 
-GitHub Pagesの標準URLで公開できたあと、お名前.comで契約している`ogiri-siyou.com`を使い回すことにした。
+GitHub Pagesの標準URLで公開できたあと、取得済みの独自ドメインを設定した。独自ドメインを設定する場合は、最初にGitHub Pagesの設定画面でCustom domainを登録し、その後にドメイン管理サービスのDNSレコードを設定する。
 
-今回のドメインは、すでにお名前.comのDNS（`01.dnsv.jp`〜`04.dnsv.jp`）をネームサーバーとして使っていた。そのため、ネームサーバーを別のサービスへ変更せず、お名前.comのDNSレコードだけを変更した。
+DNSを現在のドメイン管理サービスで管理している場合、通常はネームサーバーを変更せず、DNSレコードだけを変更すればよい。別のDNSサービスへ管理を移す場合だけ、ネームサーバーの変更が必要になる。
 
-ルートドメインにはGitHub PagesのAレコードを設定した。
+ルートドメインには、GitHub Pages公式ドキュメントに記載された複数のAレコードを設定する。値は将来変更される可能性があるため、設定時点の公式ドキュメントを確認する。
 
-```text
-@  A  185.199.108.153
-@  A  185.199.109.153
-@  A  185.199.110.153
-@  A  185.199.111.153
-```
-
-`www`には、リポジトリ名を含めず、GitHub PagesのユーザードメインへCNAMEを設定した。
+`www`には、リポジトリ名を含めず、GitHub PagesのユーザードメインへCNAMEを設定する。
 
 ```text
-www  CNAME  Roy-eng613.github.io
+www  CNAME  <GitHubユーザー名>.github.io
 ```
 
-GitHubの設定画面でCustom domainに`ogiri-siyou.com`を入力すると、ルートドメインのDNSが有効と表示された。`www`はDNS設定直後には警告が出たが、公開DNSでCNAMEが確認できるようになった。DNSの反映とGitHub側の確認には時間差がある。
-
-古いサイトを向いていたAレコードとAAAAレコードは削除した。TXTレコードはGoogleの所有権確認用だったため、用途が不明なまま削除せず残している。DNSレコードは、古いサイト用のものだけを削除し、メールや所有権確認に使っているレコードは維持する必要がある。
-
-なお、`roy-eng613.github.io`が小文字で表示されることは問題ない。ドメイン名やホスト名では大文字小文字を区別しないため、CNAMEの値としてそのまま使える。
+古いサイト用のAレコードやAAAAレコードが残っている場合は削除する。ただし、TXT・MX・その他のレコードは、メールやドメイン所有権確認に使われている可能性があるため、用途を確認せず削除しない。DNSの反映とGitHub側の確認には時間差がある。
 
 ## Google Analyticsを設定する
 
-Google Analyticsの測定ID（`G-YDKW67C9ET`）は、サイトに埋め込むための公開情報であり、GitHubの公開リポジトリに設定しても秘密鍵の漏えいにはあたらない。APIキーやサービスアカウントの秘密鍵とは違い、測定対象を識別するためのIDである。
+Google Analyticsの測定IDは、サイトに埋め込むための公開情報であり、GitHubの公開リポジトリに設定しても秘密鍵の漏えいにはあたらない。APIキーやサービスアカウントの秘密鍵とは違い、測定対象を識別するためのIDである。
 
 Quartzでは、古いNext.jsサイトのAnalytics用コンポーネントを移植するのではなく、`quartz.config.yaml`の設定でGoogle Analyticsを有効にする。
 
 ```yaml
 analytics:
   provider: google
-  tagId: G-YDKW67C9ET
+  tagId: G-XXXXXXXXXX
 ```
 
 独自ドメインへ移行したあとも同じGoogle Analyticsプロパティを使う場合、旧サイトと新しいデジタルガーデンのアクセスが同じ測定先に集計される。旧サイトと分けて分析したい場合は、同じプロパティ内に新しいウェブデータストリームを作る方法もある。
@@ -179,16 +161,23 @@ analytics:
 
 これらは今後、QuartzのCSSやレイアウトに合わせて少しずつ取り入れる予定だ。ただし、デジタルガーデンでは文章が主役なので、最初からアニメーションや効果音を全面に出すことはしない。
 
+## 関連キーワード
+
+[[デジタルガーデンとはなにか]]、[[GitHub Dependabotとはなにか]]、[[GitHubのmainブランチを保護するとはなにか]]、Obsidian、Quartz、GitHub Pages
+
+## 参考資料
+
+- [Quartz](https://quartz.jzhao.xyz/)
+- [Quartz GitHub repository](https://github.com/jackyzha0/quartz)
+- [GitHub Pages documentation](https://docs.github.com/en/pages)
+
 ## これからの運用
 
-`22_Digital-garden/content/`に公開候補の原稿を置く。公開前に個人情報、仕事のメモ、未公開画像、リンク切れを確認し、問題なければ公開用リポジトリの`content/`へコピーする。
+非公開のVaultに公開候補の原稿を置く。公開前に個人情報、仕事のメモ、未公開画像、リンク切れを確認し、問題なければ公開用リポジトリの`content/`へコピーする。
 
 文学賞のページでは、主催者公式サイトのURLと確認日を記録する。締切や応募資格は変わるので、「書いた時点では正しい」だけでなく、「いつ確認した情報か」を残しておきたい。
 
 ## 関連リンク
 
-- [公開サイト](https://roy-eng613.github.io/digital-garden/)
-- [GitHubリポジトリ](https://github.com/Roy-eng613/digital-garden)
-- [Quartz公式サイト](https://quartz.jzhao.xyz/)
 - [Quartz公式リポジトリ](https://github.com/jackyzha0/quartz)
 - [GitHub Pages公式ドキュメント](https://docs.github.com/ja/pages)
