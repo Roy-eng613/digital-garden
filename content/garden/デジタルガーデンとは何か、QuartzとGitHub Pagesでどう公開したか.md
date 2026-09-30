@@ -2,11 +2,10 @@
 created: 2026-09-30
 updated: 2026-09-30
 tags:
-  - デジタルガーデン
+  - digital-garden
   - Obsidian
   - Quartz
-  - GitHub Pages
-  - 個人サイト
+  - GitHub-Pages
 source:
   - https://quartz.jzhao.xyz/
   - https://github.com/jackyzha0/quartz
