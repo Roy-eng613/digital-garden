@@ -56,9 +56,9 @@ frontmatter.socialDescription → frontmatter.description → 本文の最初の
 
 ## 本文の `# タイトル` はタイトルと別
 
-Quartzでは `article-title` プラグインがデフォルトで有効だが、このプロジェクトでは **`enabled: false`** になっている。
+Quartzでは `article-title` プラグインがデフォルトで有効。このプロジェクトでも **有効** にしている。
 
-つまり本文の `# 見出し` は **単なる見出し（h1）として表示されるだけ** で、`<title>` タグやOGPには影響しない。
+つまり本文の `# 見出し` は **ページタイトルとして表示される**。
 
 ```markdown
 # これは本文の見出し（h1）
@@ -97,10 +97,48 @@ description: 検索結果に表示される120文字程度の要約
 
 ## このプロジェクトの現状
 
-- `article-title` プラグイン: **無効**（本文の `#` はタイトルにならない）
+- `article-title` プラグイン: **有効**（frontmatterのtitleをページタイトルとして表示）
 - `description` プラグイン: **有効**（frontmatterのdescriptionをmetaタグに出力）
 - `og-image` プラグイン: **有効**（デフォルト画像 `static/og-image.png` を全ページで使用）
-- 各ノートのfrontmatterに `title` は設定されているものと、されていないものが混在
+- `note-properties` プラグイン: **有効**（descriptionをプロパティとして表示）
+- 各ノートのfrontmatterに `title` と `description` を設定済み
+
+## 設定変更（2026-10-01）
+
+Quartzの設定を変更し、SEOと表示を改善した。
+
+### 変更内容
+
+1. **`article-title` プラグインを有効化**
+   - 変更前: `enabled: false`（本文の `#` はタイトルにならない）
+   - 変更後: `enabled: true`（frontmatterのtitleをページタイトルとして表示）
+   - 効果: 本文の h1 を削除し、frontmatterのtitleをページタイトルとして表示するようになった
+
+2. **`note-properties` に `description` を追加**
+   - 変更前: `type`, `confidence`, `status` のみ表示
+   - 変更後: `description` も表示
+   - 効果: 各ページのdescriptionがプロパティとして表示されるようになった
+
+3. **全ノートに `title` と `description` を追加**
+   - `title`: ファイル名から自動生成
+   - `description`: 本文の最初の段落から自動抽出（120文字程度）
+   - 本文の h1 を削除（frontmatterのtitleと重複するため）
+
+### 設定ファイル
+
+```yaml
+# quartz.config.yaml
+plugins:
+  - source: "@quartz-community/article-title"
+    enabled: true  # 変更: false → true
+  - source: "@quartz-community/note-properties"
+    options:
+      includedProperties:
+        - type
+        - confidence
+        - status
+        - description  # 追加
+```
 
 ## 関連
 
