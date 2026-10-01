@@ -15,9 +15,8 @@ status: draft
 title: Obsidianとはなにか
 aliases:
   - Obsidian
+description: "Obsidianは、ローカルに保存したMarkdownノートを中心に使う知識管理ツールだ。ノート同士をWikilinkでつなぎ、リンクやタグを使って自分の考えを整理できる。"
 ---
-
-# Obsidianとはなにか
 
 Obsidianは、ローカルに保存したMarkdownノートを中心に使う知識管理ツールだ。ノート同士をWikilinkでつなぎ、リンクやタグを使って自分の考えを整理できる。
 

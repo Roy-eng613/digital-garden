@@ -16,9 +16,8 @@ status: draft
 title: GitHub Pagesとはなにか
 aliases:
   - GitHub Pages
+description: "GitHub Pagesは、GitHubリポジトリにある静的なWebサイトを公開する仕組みだ。HTMLやCSS、JavaScriptなどの生成物をGitHub Actionsからデプロイできる。"
 ---
-
-# GitHub Pagesとはなにか
 
 GitHub Pagesは、GitHubリポジトリにある静的なWebサイトを公開する仕組みだ。HTMLやCSS、JavaScriptなどの生成物をGitHub Actionsからデプロイできる。
 

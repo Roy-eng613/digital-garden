@@ -4,9 +4,8 @@ tags:
   - digital-garden
 aliases:
   - この庭について
+title: about
 ---
-
-# この庭について
 
 このサイトは、Obsidianで考えていることを整理し、公開できる部分だけを育てていくためのデジタルガーデンです。
 

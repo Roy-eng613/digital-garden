@@ -1,10 +1,12 @@
 ---
+description: "WindowsのHermes Agentのデスクトップアプリがアップデートに失敗する問題と対応。"
 type: log
 confidence: low
 tags:
   - hermes-agent
   - agent-harness
 status: draft
+title: Hermes agentが最近アップデートに失敗する
 ---
 ## 概要
 - WindowsのHermes Agentのデスクトップアプリがアップデートに失敗する

@@ -17,9 +17,8 @@ status: draft
 title: Quartzとはなにか
 aliases:
   - Quartz
+description: "Quartzは、Markdownファイルから静的なWebサイトを生成するツールだ。ObsidianのWikilink、タグ、バックリンク、グラフ、検索などをWeb上で扱えるため、ノートを公開するデジタルガーデンと相性がよい。"
 ---
-
-# Quartzとはなにか
 
 Quartzは、Markdownファイルから静的なWebサイトを生成するツールだ。ObsidianのWikilink、タグ、バックリンク、グラフ、検索などをWeb上で扱えるため、ノートを公開するデジタルガーデンと相性がよい。
 

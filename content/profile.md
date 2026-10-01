@@ -1,5 +1,7 @@
 ---
 status: draft
+title: profile
+description: "理系、どこにでもいるエンジニア。"
 ---
 ## 自己紹介
 

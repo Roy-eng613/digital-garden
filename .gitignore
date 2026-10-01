@@ -1,0 +1,19 @@
+# Quartz build output
+public/
+
+# Dependencies
+node_modules/
+
+# Quartz cache
+quartz/.quartz-cache/
+
+# TypeScript build info
+tsconfig.tsbuildinfo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

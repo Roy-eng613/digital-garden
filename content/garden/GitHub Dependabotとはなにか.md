@@ -16,9 +16,8 @@ status: draft
 title: GitHub Dependabotとはなにか
 aliases:
   - Dependabotとはなにか
+description: "Dependabotは、GitHubリポジトリが利用している外部パッケージやGitHub Actionsの更新を確認し、更新用のPull Requestを自動で作成するGitHubの機能だ。"
 ---
-
-# GitHub Dependabotとはなにか
 
 Dependabotは、GitHubリポジトリが利用している外部パッケージやGitHub Actionsの更新を確認し、更新用のPull Requestを自動で作成するGitHubの機能だ。
 

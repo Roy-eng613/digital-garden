@@ -16,9 +16,8 @@ status: draft
 title: GitHubのmainブランチを保護するとはなにか
 aliases:
   - GitHubのブランチ保護
+description: "GitHubのブランチ保護は、重要なブランチへ変更を取り込む方法にルールを設定する機能だ。"
 ---
-
-# GitHubのmainブランチを保護するとはなにか
 
 GitHubのブランチ保護は、重要なブランチへ変更を取り込む方法にルールを設定する機能だ。
 

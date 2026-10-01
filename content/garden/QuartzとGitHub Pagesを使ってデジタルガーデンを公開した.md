@@ -16,9 +16,8 @@ status: evergreen
 title: QuartzとGitHub Pagesを使ってデジタルガーデンを公開した
 aliases:
   - Quartzでデジタルガーデンを公開した記録
+description: "デジタルガーデンを公開するために、ObsidianとQuartz、GitHub Pagesを組み合わせた。考え方そのものは[[デジタルガーデンとはなにか]]に分け、ここでは実際にやったことを記録する。"
 ---
-
-# QuartzとGitHub Pagesを使ってデジタルガーデンを公開した
 
 デジタルガーデンを公開するために、ObsidianとQuartz、GitHub Pagesを組み合わせた。考え方そのものは[[デジタルガーデンとはなにか]]に分け、ここでは実際にやったことを記録する。
 
