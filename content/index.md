@@ -17,7 +17,7 @@ title: デジタルガーデン
 ## はじめに
 
 - [プロフィール](profile)
-  - 作成中
+	- 作成中
 - [[デジタルガーデンとはなにか]]
 
 ## 調査中
@@ -27,10 +27,10 @@ title: デジタルガーデン
 ## よく使うタグ
 
 - #digital-garden
-- #Obsidian
-- #Quartz
-- #GitHub-Pages
-- #小説
+- #Obsidian 
+- #Quartz 
+- #GitHub-Pages 
+- #小説 
 - #読書
 - #哲学
 
