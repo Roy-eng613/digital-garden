@@ -1,3 +1,8 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+.explorer-content {
+  max-height: 400px;
+  min-height: 250px;
+}
+

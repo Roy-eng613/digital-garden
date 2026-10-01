@@ -47,9 +47,9 @@ plugins:
     options:
       defaultDateType: modified
       priority:
-        - frontmatter
-        - git
         - filesystem
+        - git
+        - frontmatter
     order: 10
   - source: "@quartz-community/syntax-highlighting"
     enabled: true
@@ -110,6 +110,17 @@ plugins:
     layout:
       position: left
       priority: 50
+  - source: "@quartz-community/recent-notes"
+    enabled: true
+    options:
+      title: 最近の更新
+      limit: 5
+      showTags: false
+      hideFolderPages: true
+      hideTagPages: true
+    layout:
+      position: left
+      priority: 60
   - source: "@quartz-community/graph"
     enabled: true
     layout:
