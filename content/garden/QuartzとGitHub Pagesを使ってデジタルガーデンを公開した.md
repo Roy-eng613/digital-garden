@@ -12,7 +12,7 @@ source:
   - https://docs.github.com/en/pages
 type: log
 confidence: high
-status: draft
+status: evergreen
 title: QuartzとGitHub Pagesを使ってデジタルガーデンを公開した
 aliases:
   - Quartzでデジタルガーデンを公開した記録
