@@ -36,6 +36,14 @@ description: "OpenRouter、Nous Portal、Ollama Cloudなどの無料LLMプロバ
 
 プロバイダーによって利用できるモデルや無料枠、応答速度が異なるため、同じプロンプトを複数のサービスで試しながら使い分けている。
 
+あと**Space bunny**は名前が可愛いけど、正直あんまり使えない印象。
+
+OpenCodeで作業するときは、Muse spark 1.3 （たぶんcontributorだから学習されるかも）が現在はFreeだから使える。まぁまぁ賢い。
+このモデルは一度Zennで記事にした。
+↓
+[Hermes Agent × OpenCode × Muse Spark 1.3でポッドキャスト作りに挑んだ記録](https://zenn.dev/ogiri/articles/hermes-agent-opencode-musespark-podcast)
+
+
 ## VS Code / Antigravity での使い方
 
 VS Code 上では Antigravity を使い、**Gemini 3.8 Flash（Medium）** で相談やコーディングを進めている。日本語の対話が非常に自然でやりやすく重宝している。
@@ -48,10 +56,14 @@ VS Code 上では Antigravity を使い、**Gemini 3.8 Flash（Medium）** で�
 - **Kiro CLI**
 - **Copilot**
 - **Codex**
-- **Antigravity**
+- **Antigravity**(ターミナルでの呼び出しコマンドは`agy`)
 - **Hermes Agent**
+- **Cursor CLI** (ターミナルでの呼び出しコマンドは`agent`)
 
 それぞれの無料枠や特性を活かして並行して作業を進められるため、開発環境として非常に快適に動かせている。
+
+KiroとかCursorとかCopilotはモデルをAutoで選んでくれるから何も考えなくていいから楽。
+もちろん簡単な作業をさせる前提で。
 
 ## Obsidianでの使い方
 
