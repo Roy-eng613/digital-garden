@@ -17,3 +17,9 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+
+# obsidian
+.obsidian/
+
+# Local sync scripts (PC-specific)
+sync-from-vault.sh
