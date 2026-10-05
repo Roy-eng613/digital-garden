@@ -16,46 +16,47 @@ description: 考えている途中のことを、完成を待たずに置いて�
 ## はじめに
 
 - [プロフィール](profile)
-	- [X(読書アカウント)](https://x.com/dokusyo_coffee)
 
 - [このサイトについて](about)
+	- お問い合わせ方法についても上記に記載しております（XのDMでも構いません）。
 	- [[プロパティのルール]]
 
 - [[デジタルガーデンとはなにか]]
 
 ---
+## 各種SNS
+気になるものはフォローよろしくお願いします。
+- [X(読書)](https://x.com/dokusyo_coffee)
+- [Instagram(読書)](https://www.instagram.com/mon_hormone/)
+- [threads(主に物を書くことについて)](https://www.threads.com/@mon_hormone)
+- [Zenn](https://zenn.dev/ogiri)：技術的な検証や実装
+- [note](https://note.com/mon_hormone)：思索やエッセイ、哲学
+- [はてなブログ「本と珈琲。」](https://dokusyocoffee.hatenablog.com/)：読書感想や小説関連の話（長め）
 
+---
 ## MOC
 
 テーマごとに関連するノートをまとめた目次です。
 
-- [[Quartz MOC]]
-- [[GitHub MOC]]
-- [[AIと意識 MOC]]
+- [[MOC-Quartz]]
+- [[MOC-GitHub]]
+- [[MOC-AIと意識]]
 
-## 調査中
-
-- [[文学賞]]
-	- 文学賞の情報をまとめていきたい。
-	- issue立ててもらってみんなで更新できるのかな
-
+---
 ## よく使うタグ
-
+### 技術系
 - #digital-garden
 - #Obsidian 
 - #Quartz 
-- #GitHub-Pages 
+- #GitHub-Pages
+### 文学系
 - #小説 
+- #SF
 - #読書
+- #読書感想
+### その他
 - #哲学
 
----
-
-## 他の発信場所
-
-- [Zenn](https://zenn.dev/ogiri)：技術的な検証や実装
-- [note](https://note.com/mon_hormone)：思索やエッセイ、哲学
-- [はてなブログ「本と珈琲。」](https://dokusyocoffee.hatenablog.com/)：読書感想や小説関連の話（長め）
 
 > [!info] このサイトについて
 > すべてのページが完成版とは限りません。

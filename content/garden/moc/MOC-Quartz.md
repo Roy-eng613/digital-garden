@@ -27,5 +27,5 @@ Quartz関連のノートを集約するMap of Content。
 
 ## 関連
 
-- [[GitHub MOC]]
+- [[MOC-GitHub]]
 - [[デジタルガーデンとはなにか]]

@@ -72,7 +72,7 @@ cp -r "Vaultパス/content/"* "公開リポジトリパス/content/"
 ローカルでビルドせず `content/` だけ push しても、Actions 側でビルドしてデプロイされる。
 
 ## 関連
-- [[Quartz MOC]]
+- [[MOC-Quartz]]
 - [[QuartzのURL・タイトル・SEOの仕組み]]
 - [[QuartzとGitHub Pagesを使ってデジタルガーデンを公開した]]
 - [[デジタルガーデンの公開手順]]（30_Projects/digital-garden/公開手順.md）

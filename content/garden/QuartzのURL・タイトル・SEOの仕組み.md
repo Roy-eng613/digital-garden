@@ -142,6 +142,6 @@ plugins:
 
 ## 関連
 
-- [[Quartz MOC]]
+- [[MOC-Quartz]]
 - [[Quartzのビルドとデプロイの仕組み]]
 - [[QuartzとGitHub Pagesを使ってデジタルガーデンを公開した]]
