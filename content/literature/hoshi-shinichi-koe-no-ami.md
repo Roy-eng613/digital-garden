@@ -1,5 +1,5 @@
 ---
-title: 『声の網』を読んで
+title: 星新一 『声の網』 感想
 aliases:
   - 声の網
   - 『声の網』を読んで
@@ -9,7 +9,7 @@ tags:
   - SF
   - 星新一
   - 読書感想
-type: article
+type: book
 status: evergreen
 created: 2026-10-08
 updated: 2026-10-08
@@ -35,4 +35,3 @@ source:
 ## 関連
 - [[enjo-tou-self-reference-engine|Self-Reference ENGINE]]
 - [[月は無慈悲な夜の女王]] - 感想ノート未作成
-

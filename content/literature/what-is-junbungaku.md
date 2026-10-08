@@ -4,6 +4,7 @@ description: 「純文学とは何か」を、読む側と書く側の2つの視
 aliases:
   - 純文学とは何か
   - 純文学
+type: essay
 tags:
   - 小説
   - 執筆

@@ -1,5 +1,5 @@
 ---
-title: 『Self-Reference ENGINE』を読んで
+title: 円城塔 『Self-Reference ENGINE』 感想
 aliases:
   - Self-Reference ENGINE
   - 『Self-Reference ENGINE』を読んで
@@ -9,7 +9,7 @@ tags:
   - SF
   - 円城塔
   - 読書感想
-type: article
+type: book
 status: evergreen
 created: 2026-10-08
 updated: 2026-10-08

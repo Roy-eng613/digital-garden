@@ -1,5 +1,5 @@
 ---
-title: 『バカの壁』を読んで
+title: 養老孟子 『バカの壁』を読んで
 aliases:
   - バカの壁
   - 『バカの壁』を読んで
@@ -9,7 +9,7 @@ tags:
   - 哲学
   - 養老孟子
   - 読書感想
-type: article
+type: book
 status: evergreen
 created: 2026-10-09
 updated: 2026-10-09
