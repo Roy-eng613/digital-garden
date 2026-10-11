@@ -38,7 +38,7 @@ Quartzでは公式プラグインとして `@quartz-community/comments` 経由�
 
 ### 1. GitHubリポジトリをPublicにする
 
-giscusが動作するには、リポジトリが**公開（Public）**である必要がある。
+giscusの対象リポジトリは、GitHub上で **Public** に設定しておく必要がある。
 
 ### 2. GitHub Discussionsを有効化する
 
@@ -81,9 +81,9 @@ giscusが動作するために初期投稿は不要で、カテゴリ（Announce
     provider: giscus
     options:
       repo: Roy-eng613/digital-garden
-      repoId: R_kgDOU1Azgg
+      repoId: R_kgDO...
       category: Announcements
-      categoryId: DIC_kwDOU1Azgs4DHjL_
+      categoryId: DIC_kwDO...
       mapping: pathname
       strict: false
       reactionsEnabled: true
@@ -94,6 +94,8 @@ giscusが動作するために初期投稿は不要で、カテゴリ（Announce
     position: afterBody
     priority: 50
 ```
+
+`repoId`と`categoryId`はリポジトリやカテゴリごとに異なる。上記は形式を示すために先頭だけ残した例なので、実際の設定ではgiscus.appが表示する値を最後までコピーする。
 
 ---
 
@@ -114,4 +116,3 @@ giscusが動作するために初期投稿は不要で、カテゴリ（Announce
 - [[Quartzとはなにか]]
 - [[QuartzとGitHub Pagesを使ってデジタルガーデンを公開した]]
 - [[MOC-Quartz]]
-
