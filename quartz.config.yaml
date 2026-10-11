@@ -194,6 +194,11 @@ plugins:
     enabled: true
     options:
       links:
+        プロフィール: /profile.html
+        "X（メイン）": https://x.com/mon_hormone
+        "X（読書）": https://x.com/dokusyo_coffee
+        note: https://note.com/mon_hormone
+        Zenn: https://zenn.dev/ogiri
         GitHub: https://github.com/Roy-eng613/digital-garden
         "© 2026 Roy-eng613": https://github.com/Roy-eng613/digital-garden/blob/main/README.md#ライセンス
     layout:
