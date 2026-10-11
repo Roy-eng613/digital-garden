@@ -31,5 +31,8 @@ GitHubリポジトリのSettings → Pagesで、公開元を「GitHub Actions」
 文学賞などの更新される情報は、主催者公式サイトを確認し、出典と確認日を記録します。
 
 ## ライセンス
-contentディレクトリにあるファイル内の文章については、著作権は筆者である私といたします。
-Quartz本体のライセンスは`LICENSE.txt`を参照してください。サイト内の文章・画像の利用条件は、各ページまたは今後追加する利用案内に記載します。
+
+- **記事・コンテンツ** (`content/` 以下): Copyright (c) 2026 Roy-eng613. All rights reserved. 無断転載・複製を禁じます。
+- **Quartzソースコード**: MIT License (c) jackyzha0
+
+詳細は [`LICENSE.txt`](./LICENSE.txt) を参照してください。

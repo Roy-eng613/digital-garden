@@ -1,8 +1,29 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
-.explorer-content {
-  max-height: 400px;
-  min-height: 250px;
+// 左サイドバー：画面が狭い場合でも押しつぶされずスクロール可能にする
+.sidebar.left {
+  overflow-y: auto;
+  scrollbar-width: thin;
 }
 
+// エクスプローラー：最近の更新に押しつぶされないよう親要素の高さを確保
+.explorer {
+  flex: 1 1 auto;
+  min-height: 220px;
+}
+
+.explorer-content {
+  max-height: 380px;
+  min-height: 180px;
+  overflow-y: auto;
+  padding-bottom: 1.5rem;
+  box-sizing: border-box;
+}
+
+// 最近の更新：リストの余白を適正化してサイドバーの圧迫を緩和
+.recent-notes {
+  flex: 0 1 auto;
+}
+.recent-notes > ul.recent-ul > li {
+  margin: 0.75rem 0;
+}

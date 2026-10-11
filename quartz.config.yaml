@@ -228,6 +228,24 @@ plugins:
     enabled: true
     options: {}
     order: 45
+  - source: "@quartz-community/comments"
+    enabled: true
+    options:
+      provider: giscus
+      options:
+        repo: Roy-eng613/digital-garden
+        repoId: R_kgDOU1Azgg
+        category: Announcements
+        categoryId: DIC_kwDOU1Azgs4DHjL_
+        mapping: pathname
+        strict: false
+        reactionsEnabled: true
+        inputPosition: top
+        lang: ja
+        loading: lazy
+    layout:
+      position: afterBody
+      priority: 50
 layout:
   groups:
     toolbar:

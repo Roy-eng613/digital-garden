@@ -1,3 +1,16 @@
+======================================================================
+Content & Articles (content/ directory and related assets)
+======================================================================
+Copyright (c) 2026 Roy-eng613
+All rights reserved.
+
+The articles, notes, and other written content in the content/ directory
+are the intellectual property of Roy-eng613.
+Unauthorized reproduction or redistribution is prohibited.
+
+======================================================================
+Software (Quartz source code)
+======================================================================
 MIT License
 
 Copyright (c) 2021 jackyzha0
