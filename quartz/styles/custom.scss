@@ -1,21 +1,20 @@
 @use "./variables.scss" as *;
 
-// 左サイドバー：画面が狭い場合でも押しつぶされずスクロール可能にする
-.sidebar.left {
-  overflow-y: auto;
-  scrollbar-width: thin;
+// エクスプローラーと最近の更新をページ全体のスクロールで閲覧できるようにする
+.explorer {
+  min-height: 1.2rem;
 }
 
-// エクスプローラー：最近の更新に押しつぶされないよう親要素の高さを確保
-.explorer {
-  flex: 1 1 auto;
-  min-height: 220px;
+@media all and not ($mobile) {
+  .explorer {
+    overflow: visible;
+  }
 }
 
 .explorer-content {
-  max-height: 380px;
-  min-height: 180px;
-  overflow-y: auto;
+  max-height: none;
+  min-height: 0;
+  overflow-y: visible;
   padding-bottom: 1.5rem;
   box-sizing: border-box;
 }

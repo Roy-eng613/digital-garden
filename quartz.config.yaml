@@ -195,6 +195,7 @@ plugins:
     options:
       links:
         GitHub: https://github.com/Roy-eng613/digital-garden
+        "© 2026 Roy-eng613": https://github.com/Roy-eng613/digital-garden/blob/main/README.md#ライセンス
     layout:
       position: footer
       priority: 50
