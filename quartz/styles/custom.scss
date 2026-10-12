@@ -109,6 +109,44 @@
   box-sizing: border-box;
 }
 
+@media all and ($mobile) {
+  .explorer-content ul li {
+    min-width: 0;
+  }
+
+  .explorer-content .folder-outer > ul {
+    margin-left: 3px;
+    padding-left: 0.4rem;
+  }
+
+  .explorer-content ul li > a {
+    display: block;
+    min-width: 0;
+    width: calc(100% - 2rem);
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0.25rem 0.5rem;
+    border-bottom: 1px solid color-mix(in srgb, var(--lightgray) 55%, transparent);
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .explorer-content .folder-container > div {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .explorer-content .folder-container div > button {
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  .explorer-content .folder-container div > button span {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+}
+
 // 最近の更新：リストの余白を適正化してサイドバーの圧迫を緩和
 .recent-notes {
   flex: 0 1 auto;
