@@ -1,5 +1,6 @@
 import { PageFrame, PageFrameProps } from "./types"
 import HeaderConstructor from "../Header"
+import MobileTableOfContents from "../MobileTableOfContents"
 
 const Header = HeaderConstructor()
 
@@ -53,6 +54,7 @@ export const DefaultFrame: PageFrame = {
           {right.map((BodyComponent) => (
             <BodyComponent {...componentData} />
           ))}
+          <MobileTableOfContents {...componentData} />
         </div>
         {footer.map((FooterComponent) => (
           <FooterComponent {...componentData} />
