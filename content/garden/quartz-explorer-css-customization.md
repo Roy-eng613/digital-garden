@@ -1,6 +1,6 @@
 ---
 created: 2026-10-11
-updated: 2026-10-11
+updated: 2026-10-12
 tags:
   - digital-garden
   - Quartz
@@ -15,7 +15,7 @@ status: evergreen
 title: Quartzのエクスプローラー（ファイルツリー）の表示をCSSでカスタマイズした
 aliases:
   - Quartzエクスプローラーカスタマイズ
-description: "Quartzの左サイドバーに表示されるエクスプローラー（ファイルツリー）の高さ制御と、リスト末尾の文字切れを custom.scss でCSSで修正した記録。"
+description: "Quartzのエクスプローラーで起きたPCのリスト切れとスマホの長いノート名のはみ出しを、custom.scssで調整した記録。"
 ---
 
 ## 問題
@@ -27,40 +27,35 @@ description: "Quartzの左サイドバーに表示されるエクスプローラ
 
 ---
 
-## 修正方法
+## PCのスクロール調整
 
-[`quartz/styles/custom.scss`](https://github.com/Roy-eng613/digital-garden/blob/main/quartz/styles/custom.scss) を以下のように変更する。
+当初はエクスプローラーの高さに固定上限を設けていたが、項目数が増えるとリスト末尾が見切れる原因になった。固定の高さで解決するのではなく、PCではエクスプローラー内の高さ制限と独立スクロールを解除し、ページ全体のスクロールに揃えている。設定の経緯は [[quartz-layout-scroll-and-footer|Quartzのスクロールとフッターを整えた]] を参照。
+
+## スマホで長いノート名がはみ出す
+
+スマホではExplorerプラグインが画面全体を使うナビゲーションを表示する。フォルダの階層が深いと左インデントが加算され、長いノート名を表示する幅が足りず、右端からはみ出すことがあった。また、項目の改行と区切りが分かりにくかった。
+
+モバイル用のCSSを `quartz/styles/custom.scss` に追加し、階層インデントを抑え、リンクの幅を少し狭めて折り返すようにする。
 
 ```scss
-// custom.scss
-.sidebar.left {
-  overflow-y: auto;
-  scrollbar-width: thin;
-}
+@media all and ($mobile) {
+  .explorer-content .folder-outer > ul {
+    margin-left: 3px;
+    padding-left: 0.4rem;
+  }
 
-.explorer {
-  flex: 1 1 auto;
-  min-height: 220px;
-}
-
-.explorer-content {
-  max-height: 380px;
-  min-height: 180px;
-  overflow-y: auto;
-  padding-bottom: 1.5rem;
-  box-sizing: border-box;
-}
-
-.recent-notes > ul.recent-ul > li {
-  margin: 0.75rem 0;
+  .explorer-content ul li > a {
+    display: block;
+    width: calc(100% - 2rem);
+    padding: 0.25rem 0.5rem;
+    border-bottom: 1px solid color-mix(in srgb, var(--lightgray) 55%, transparent);
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
 }
 ```
 
-### ポイント
-
-- **親要素 `.explorer` の高さ確保**: 左サイドバーに「最近の更新」が同居している場合、親の `.explorer` が縮んで潰れてしまうのを `min-height: 220px` と `flex: 1 1 auto` で防ぐ。
-- **`.sidebar.left` のスクロール**: 画面高さが小さい場合でも押しつぶされずスクロール可能にする。
-- **最下部の余白 (`padding-bottom: 1.5rem`)**: スクロール最下部で一番下のテキストが境界線で見切れないようにする。
+`width: calc(100% - 2rem)` がリンクの折り返し位置を調整する値。差し引く幅を大きくすると早めに改行し、小さくすると一行に表示できる文字数が増える。フォルダ名にも折り返しを指定している。下線はノート項目を区別するための控えめな境界線で、これらは `$mobile` の範囲内だけに適用する。
 
 ---
 
@@ -76,6 +71,6 @@ Quartzでのカスタムスタイルは `quartz/styles/custom.scss` に書く。
 
 ## 関連ノート
 
+- [[quartz-layout-scroll-and-footer|Quartzのスクロールとフッターを整えた]]
 - [[Quartzとはなにか]]
 - [[MOC-Quartz]]
-
