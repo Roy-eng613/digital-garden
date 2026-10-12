@@ -43,5 +43,5 @@ draft: false
 
 ## 関連
 
-- [[芥川賞]] 
-	- 未作成
+- [[芥川賞の良いところ]]
+- [AIが芥川賞を獲れないのは文章力ではなく「偏り」がないからだ](https://dokusyocoffee.hatenablog.com/entry/ai-novel-bias-reading)
