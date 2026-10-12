@@ -27,6 +27,7 @@ Quartz関連のノートを集約するMap of Content。
 - [[quartz-explorer-css-customization|エクスプローラーの表示をCSSでカスタマイズした]] — 左サイドバーの文字切れ修正
 - [[quartz-content-license-setup|コンテンツにMITと別の著作権表示を設定した]] — プログラムとコンテンツのライセンスを分ける方法
 - [[quartz-layout-scroll-and-footer|Quartzのスクロールとフッターを整えた]] — ページスクロールへの統一と著作権リンク
+- [[quartz-sticky-toc-and-backlinks|Quartzの目次を追従させてバックリンクを記事末尾に揃えた]] — 追従する目次、モバイル用メニュー、記事末尾のバックリンク
 
 ## 機能追加・プラグイン
 
