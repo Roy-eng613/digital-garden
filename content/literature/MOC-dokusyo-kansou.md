@@ -1,6 +1,6 @@
 ---
 created: 2026-10-12
-updated: 2026-10-15
+updated: 2026-10-16
 tags:
   - 読書
   - 読書感想
@@ -20,6 +20,7 @@ aliases:
 - [[ghost-in-the-shell-anthology|『攻殻機動隊小説アンソロジー』感想]]
 - [[hoshi-shinichi-koe-no-ami|星新一 『声の網』 感想]]
 - [[inherit-the-stars|ジェイムズ・P・ホーガン 『星を継ぐもの』 感想]]
+- [[liu-cixin-the-dark-forest-2|劉慈欣 『三体II 黒暗森林 下』 感想]]
 - [[protocol-of-humanity|長谷敏司 『プロトコル・オブ・ヒューマニティ』 感想]]
 - [[stanislaw-lem-solaris|スタニスワフ・レム 『ソラリス』 感想]]
 - [[arthur-c-clarke-childhoods-end|アーサー・C・クラーク 『幼年期の終り』 感想]]

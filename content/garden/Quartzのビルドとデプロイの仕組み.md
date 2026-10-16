@@ -1,6 +1,6 @@
 ---
 created: 2026-10-01
-updated: 2026-10-01
+updated: 2026-10-16
 tags:
   - digital-garden
   - Quartz
@@ -35,13 +35,17 @@ GitHub Pages (https://ogiri-siyou.com/)
 - **GitHub Actions**: push 時に自動で `npx quartz build` 実行 → `public/` を artifact としてアップロード → Pages にデプロイ
 
 ### 2. 普段の運用
+パスは環境に合わせて読み替える（以下は例）。
 ```bash
-# Vault側で編集
-# 同期
-cp -r "E:/Documents/git_work/vault_omarchy_git/22_Digital-garden/content/"* "E:/Documents/git_work/digital-garden/content/"
+# 環境に合わせて設定
+VAULT="$HOME/vault/22_Digital-garden"      # Vaultのパス
+PUBLIC="$HOME/git/digital-garden"          # 公開用リポジトリのパス
+
+# Vault側で編集したあと、同期
+cp -r "$VAULT/content/"* "$PUBLIC/content/"
 
 # 確認したいときだけ
-cd "E:/Documents/git_work/digital-garden"
+cd "$PUBLIC"
 npx quartz build --serve  # http://localhost:8080
 
 # push（ビルド不要）
@@ -56,11 +60,11 @@ git push
 
 ```bash
 # 方法A: rsync（推奨・要インストール）
-rsync -av --delete "Vaultパス/content/" "公開リポジトリパス/content/"
+rsync -av --delete "$VAULT/content/" "$PUBLIC/content/"
 
 # 方法B: 削除してからコピー
-rm -rf "公開リポジトリパス/content/"*
-cp -r "Vaultパス/content/"* "公開リポジトリパス/content/"
+rm -rf "$PUBLIC/content/"*
+cp -r "$VAULT/content/"* "$PUBLIC/content/"
 ```
 
 ### 4. GitHub Actions の中身（`.github/workflows/deploy.yml`）
