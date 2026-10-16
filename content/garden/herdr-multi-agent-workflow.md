@@ -1,6 +1,6 @@
 ---
 created: 2026-10-08
-updated: 2026-10-08
+updated: 2026-10-17
 tags:
   - Herdr
   - AIエージェント
@@ -58,8 +58,8 @@ Omarchy環境にはHerdrが標準的に組み込まれており、デスクト�
 | ツール / エージェント | 呼び出しコマンド / 形態 | 特徴・役割 |
 | :--- | :--- | :--- |
 | **OpenCode** | `opencode` | コントリビューター枠（Muse Spark 1.3）など |
-| **Kiro CLI** | `kiro` | Autoモデル選択で軽量タスクを高速処理 |
-| **Copilot** | `gh copilot` / 連携 | 定常的なコード補完・チャット |
+| **Kiro CLI** | `kiro-cli` | Autoモデル選択で軽量タスクを高速処理 |
+| **Copilot** | `copilot` | 定常的なコード補完・チャット |
 | **Codex** | `codex` | コード生成・特定修正 |
 | **Antigravity** | `agy` | Google開発の自律エージェント。Gemini 3.8 Flash連携 |
 | **Hermes Agent** | `hermes` | トラブルシューティングやVault管理 |
