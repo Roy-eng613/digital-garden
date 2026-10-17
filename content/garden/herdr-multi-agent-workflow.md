@@ -1,6 +1,6 @@
 ---
 created: 2026-10-08
-updated: 2026-10-17
+updated: 2026-10-08
 tags:
   - Herdr
   - AIエージェント

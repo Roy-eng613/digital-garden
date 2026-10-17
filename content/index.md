@@ -1,6 +1,6 @@
 ---
 created: 2026-09-30
-updated: 2026-10-12
+updated: 2026-10-17
 tags:
   - digital-garden
   - Obsidian
@@ -48,11 +48,16 @@ description: 考えている途中のことを、完成を待たずに置いて�
 テーマごとに関連するノートをまとめた目次
 ### 読書
 - [MOC-読書感想](MOC-dokusyo-kansou)
+### 執筆
+- [[文学賞]]
 ### 哲学？
 - [[MOC-AIと意識]]
 ### 技術
 - [[MOC-Quartz]]
 - [[MOC-GitHub]]
+- [[MOC-WSL3-AI-Development|WSL3とAI開発]]
+### AI・セキュリティ
+- [[MOC-AI-Agent-Security|AIエージェントセキュリティ]]
 
 ---
 ## よく使うタグ
