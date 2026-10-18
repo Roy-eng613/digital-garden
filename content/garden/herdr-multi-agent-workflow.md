@@ -55,15 +55,15 @@ Omarchy環境にはHerdrが標準的に組み込まれており、デスクト�
 
 現在、Herdr上で常時立ち上げているエージェント群は以下の通り。
 
-| ツール / エージェント | 呼び出しコマンド / 形態 | 特徴・役割 |
-| :--- | :--- | :--- |
-| **OpenCode** | `opencode` | コントリビューター枠（Muse Spark 1.3）など |
-| **Kiro CLI** | `kiro-cli` | Autoモデル選択で軽量タスクを高速処理 |
-| **Copilot** | `copilot` | 定常的なコード補完・チャット |
-| **Codex** | `codex` | コード生成・特定修正 |
-| **Antigravity** | `agy` | Google開発の自律エージェント。Gemini 3.8 Flash連携 |
-| **Hermes Agent** | `hermes` | トラブルシューティングやVault管理 |
-| **Cursor CLI** | `agent` | Autoモデル選択で手軽な指示出し |
+| ツール / エージェント     | 呼び出しコマンド / 形態 | 特徴・役割                                |
+| :--------------- | :------------ | :----------------------------------- |
+| **OpenCode**     | `opencode`    | コントリビューター枠（Muse Spark 1.3）など         |
+| **Kiro CLI**     | `kiro-cli`    | Autoモデル選択で軽量タスクを高速処理                 |
+| **Copilot**      | `copilot`     | 定常的なコード補完・チャット                       |
+| **Codex**        | `codex`       | コード生成・特定修正                           |
+| **Antigravity**  | `agy`         | Google開発の自律エージェント。Gemini 3.8 Flash連携 |
+| **Hermes Agent** | `hermes`      | トラブルシューティングやVault管理                  |
+| **Cursor CLI**   | `agent`       | Autoモデル選択で手軽な指示出し                    |
 
 ひとつのエージェントに時間のかかる探索やビルドを任せている間、別ペインのエージェントでスクリプトの草案を書かせるなど、待ち時間を極限まで減らした並行開発が可能になっている。
 
