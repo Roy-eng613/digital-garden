@@ -101,6 +101,7 @@ OSSハーネスのセキュリティは「モデルが賢いかどうか」で�
 
 ## 関連ノート
 
+- [[three-oss-agent-harnesses|三大OSSハーネス比較：Hermes・DeepSeek Harness・OpenCode]]
 - [[chinese-llm-security-and-onprem|中国製LLMのセキュリティとオンプレ運用]]
 - [[websearch-prompt-injection-risk|Web検索・Web取得を介したプロンプトインジェクションと情報漏洩]]
 - [[obsidian-claudian-local-ai-agents|Obsidianプラグイン「Claudian」とローカルAIエージェント]]

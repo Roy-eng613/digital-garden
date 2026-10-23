@@ -20,6 +20,8 @@ AIエージェントを安全に使うためのセキュリティ関連ノート
 ## 実行基盤（ハーネス）
 
 - [[oss-agent-harness-security|OSSエージェントハーネスのセキュリティ]] — ハーネスの攻撃面、間接プロンプトインジェクション、スキル供給網、YOLOモードの危険
+- [[opencode-v2-migration-and-omo|OpenCode V2移行とOh My OpenCodeの現在地]] — V1/V2の選択基準、プラグイン互換の断絶、OmOの現在地
+- [[three-oss-agent-harnesses|三大OSSハーネス比較：Hermes・DeepSeek Harness・OpenCode]] — 「住処」で見る3つの設計思想と用途別の選び方
 
 ## モデル・データ主権
 
