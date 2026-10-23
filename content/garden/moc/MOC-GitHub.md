@@ -1,6 +1,6 @@
 ---
 created: 2026-10-01
-updated: 2026-10-01
+updated: 2026-10-24
 tags:
   - digital-garden
   - GitHub
@@ -29,6 +29,10 @@ GitHub関連のノートを集約するMap of Content。
 
 - [[GitHub Dependabotとはなにか]] — 依存関係の自動更新
 - [[GitHubのmainブランチを保護するとはなにか]] — ブランチ保護ルール（Rulesets）の設定方法
+
+## セルフホスト
+
+- [[gitea-and-redmine-for-personal-use|個人環境にGiteaとRedmineは必要か]] — GiteaでGit remoteとIssueを補い、Redmineは個人用途では過剰という整理
 
 ## 関連
 

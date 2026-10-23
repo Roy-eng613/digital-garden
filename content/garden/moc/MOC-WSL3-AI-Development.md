@@ -1,6 +1,6 @@
 ---
 created: 2026-10-17
-updated: 2026-10-17
+updated: 2026-10-24
 tags:
   - digital-garden
   - WSL
@@ -45,4 +45,5 @@ WSL3のアップデートを起点に、「コンテナとは何か」「なぜ�
 - [[herdr-multi-agent-workflow|Herdrによるマルチエージェント並行作業環境]]
 - [[obsidian-claudian-local-ai-agents|Obsidianプラグイン「Claudian」とローカルAIエージェント]]
 - [[oss-agent-harness-security|OSSエージェントハーネスのセキュリティ]]
+- [[gitea-and-redmine-for-personal-use|個人環境にGiteaとRedmineは必要か]] — WSL上でGiteaを動かす選択肢と注意点
 - [[free-llm-providers-i-use-often|最近よく使っているLLMプロバイダー（無料）]]
