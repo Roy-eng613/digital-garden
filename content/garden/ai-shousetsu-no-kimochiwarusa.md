@@ -145,5 +145,6 @@ AIに小説を書かせると、文法も設定も正しいのに、読み続け
 
 ## 関連
 
+- [[harness-engineering-ai-novel|ハーネスエンジニアリング：AI小説の質はモデルの外側で決まる]]
 - [[llm-external-memory-atomic-notes|LLMの外部記憶としての「一ノート一アイデア」]]
 - [[who-decides-the-title|小説のタイトルは誰が決めるのか]]

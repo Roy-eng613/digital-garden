@@ -25,6 +25,7 @@ AIと小説・創作・文学の関係について考えたノートをまとめ
 ## AIと小説を書く（設計と運用）
 
 - [[MOC-AI-novel-engineering|AI小説エンジニアリング MOC]] — 哲学・フィードバック・コンテキスト設計・マネタイズの索引
+- [[harness-engineering-ai-novel|ハーネスエンジニアリング：AI小説の質はモデルの外側で決まる]] — モデルではなく周りを設計する
 - [[ai-shousetsu-no-kimochiwarusa|AI小説の「気持ち悪さ」はどこから来るのか]] — 読めない文章を4つの型に分解し、文体ルールを固定する
 - [[llm-external-memory-atomic-notes|LLMの外部記憶としての「一ノート一アイデア」]] — 設定資料の分割とシーン執筆プロンプト
 - [[who-decides-the-title|小説のタイトルは誰が決めるのか]] — AIに候補を出させ、作者が捨てる
