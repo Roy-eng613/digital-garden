@@ -1,6 +1,6 @@
 ---
 created: 2026-10-28
-updated: 2026-10-28
+updated: 2026-10-31
 tags:
   - digital-garden
   - AI
@@ -57,6 +57,7 @@ AIと長編小説を書くための索引。作品『思考のプリフェッチ
 - [[ai-shousetsu-no-kimochiwarusa|AI小説の「気持ち悪さ」はどこから来るのか]] — 4つの型と文体ルール全文
 - [[llm-external-memory-atomic-notes|LLMの外部記憶としての「一ノート一アイデア」]] — シーン単位の投入とプロンプト
 - [[who-decides-the-title|小説のタイトルは誰が決めるのか]] — 候補を出させ、作者が捨てる
+- [[separate-writing-and-editing-models|書くモデルと直すモデルを分ける]] — 生成と添削を別モデルに割り当てる
 
 ## 作品
 
