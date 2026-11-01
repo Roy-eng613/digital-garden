@@ -1,6 +1,6 @@
 ---
 created: 2026-10-28
-updated: 2026-10-31
+updated: 2026-11-01
 tags:
   - digital-garden
   - AI
@@ -25,6 +25,7 @@ AIと長編小説を書くための索引。作品『思考のプリフェッチ
 ## 1. 哲学・メタ視点
 
 - [[boundary-of-interestingness-human-ai|小説の「面白さ」における人間とAIの境界線]] — 面白さを3層に分け、逸脱の保持を境界にする
+- [[human-advantage-is-priority-compression|人間の優位性は記憶容量ではなく重要度の圧縮にある]] — 人間は細部ではなく、出来事の意味と重みを残す
 - [[turing-test-for-writing|文章におけるテューリングテストの定義]] — 帰属ではなく継続と再読で測る
 - [[signals-of-ai-ness|読者が「AIっぽさ」を察知するシグナルとメンタルモデル]] — 正体は「配慮の匂い」
 - [[tales-human-vs-ai-comparison|TALESでの人間作 vs AI作の比較実験仮説]] — 交絡を消した比較設計
@@ -40,6 +41,8 @@ AIと長編小説を書くための索引。作品『思考のプリフェッチ
 ## 3. 技術・ステート管理・コンテキスト設計
 
 - [[context-window-exhaustion|AI小説執筆におけるコンテキストウィンドウの枯渇問題]] — 量ではなく注意の配分
+- [[long-form-llm-coherence-is-priority-maintenance|LLMの長編小説の破綻は記憶容量より重要度の維持で起きる]] — 保存容量ではなく、情報の重要度と公開時期の管理が核心
+- [[scaling-llms-will-not-solve-long-form-fiction-alone|LLMの大型化だけでは長編小説の破綻は解決しない]] — モデルの大型化だけでなく、計画・状態管理・検証が必要
 - [[hierarchical-memory-l1-l2-l3|階層化メモリ構造：L1・L2・L3ステート管理の定義]] — 何を揮発させ、何を残すか
 - [[obsidian-as-llm-external-memory|ObsidianをLLMの外部記憶（L2-L3）として利用するプロトコル]] — ファイル名・frontmatter・MOC・渡す単位
 - [[foreshadowing-json-markdown|長編小説における伏線とフラグのJSON-Markdown管理]] — 状態は台帳、意味はMarkdown。形式は規模で選ぶ
