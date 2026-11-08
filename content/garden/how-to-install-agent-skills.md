@@ -9,7 +9,7 @@ tags:
   - Claude-Code
   - npx-skills
   - セキュリティ
-type: article
+type: research
 confidence: observed
 status: evergreen
 created: 2026-08-30
@@ -207,3 +207,10 @@ head -n 15 ~/.agents/skills/*/SKILL.md
 - **公式リポジトリ**: [mattpocock/skills](https://github.com/mattpocock/skills)
 - **CLI ドキュメント**: [skills.sh/docs/cli](https://skills.sh/docs/cli)
 - **解説**: [aihero.dev/grill-with-docs](https://aihero.dev/grill-with-docs)
+
+### 仕様確認
+
+- [Anthropic: Agent Skills overview](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) — Skillsの構成と読み込み方式（確認日: 2026-11-08）
+- [Hermes Agent: Skills System](https://hermes-agent.nousresearch.com/docs/user-guide/features/skills) — HermesでのSkillsの導入・利用仕様（確認日: 2026-11-08）
+
+インストールパスや対応状況はCLI・エージェントの更新で変わる可能性がある。手順を実行する前に、対象バージョンの公式資料も確認する。

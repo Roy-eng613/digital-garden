@@ -5,9 +5,8 @@ tags:
   - AIエージェント
   - 記憶
   - Obsidian
-  - AGENTS.md
   - コンテキスト管理
-type: article
+type: reflection
 confidence: medium
 status: draft
 title: USER.mdとMEMORY.mdで作る、どのエージェントでも使える記憶運用
@@ -105,5 +104,6 @@ AIエージェントを何種類も併用していると、同じことを毎回
 
 ## 関連ノート
 
+- [[MOC-Agent-Context-and-Memory|AIエージェントの指示・記憶・コンテキスト MOC]]
 - [[obsidian-claudian-local-ai-agents|Obsidianプラグイン「Claudian」とローカルAIエージェント]]
 - [[ide-agent-free-tier-rotation|IDEとエージェントの無料枠ローテーション運用術]]
